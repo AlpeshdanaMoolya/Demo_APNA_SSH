@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220302 13:03:07.766" rpa="false" schemaversion="2">
-<suite id="s1" name="Create ReplyPost" source="D:\apna\Android\TestSuites\Create_ReplyPost.robot">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220303 12:25:36.543" rpa="false" schemaversion="2">
+<suite id="s1" name="Create ReplyPost" source="D:\apna\Demo_APNA_SSH\Android\TestSuites\Create_ReplyPost.robot">
 <kw name="OpenApnaApp" library="commons" type="SETUP">
 <kw name="Open Application" library="Zoomba.MobileLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
@@ -14,520 +14,73 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220302 13:03:08.228" endtime="20220302 13:03:38.107"/>
+<kw name="Save Appium Screenshot" library="Zoomba.MobileLibrary">
+<doc>Takes a screenshot with a unique filename to be stored in Robot Framework compiled
+reports.</doc>
+<msg timestamp="20220303 12:26:10.399" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20220303 12:26:10.392" endtime="20220303 12:26:10.399"/>
 </kw>
-<status status="PASS" starttime="20220302 13:03:08.227" endtime="20220302 13:03:38.107"/>
+<msg timestamp="20220303 12:26:10.402" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220303 12:26:10.406" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output.
+</msg>
+<status status="FAIL" starttime="20220303 12:25:36.930" endtime="20220303 12:26:10.406"/>
+</kw>
+<status status="FAIL" starttime="20220303 12:25:36.930" endtime="20220303 12:26:10.406"/>
 </kw>
 <test id="s1-t1" name="enterNumber">
-<kw name="enter_numberLogin" library="Createpost">
-<kw name="Enter_Mobile_no" library="commons">
-<kw name="Wait for and click on Element" library="commons">
-<arg>${editText}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:03:38.110" endtime="20220302 13:03:43.278"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:03:43.283" level="INFO">Clicking element 'id=et_login_number'.</msg>
-<status status="PASS" starttime="20220302 13:03:43.279" endtime="20220302 13:03:44.520"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:38.110" endtime="20220302 13:03:44.521"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${editText}</arg>
-<arg>${Login_No}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220302 13:03:44.526" level="INFO">Typing text '2288990006' into text field 'id=et_login_number'</msg>
-<status status="PASS" starttime="20220302 13:03:44.522" endtime="20220302 13:03:46.006"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:44.521" endtime="20220302 13:03:46.007"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${submit_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:03:46.007" endtime="20220302 13:03:46.640"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:03:46.644" level="INFO">Clicking element 'id=btn_send'.</msg>
-<status status="PASS" starttime="20220302 13:03:46.640" endtime="20220302 13:03:46.797"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:46.007" endtime="20220302 13:03:46.797"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${otpBtn1}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:03:46.798" endtime="20220302 13:03:48.656"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:03:48.660" level="INFO">Clicking element 'id=et_otp1'.</msg>
-<status status="PASS" starttime="20220302 13:03:48.656" endtime="20220302 13:03:49.613"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:46.797" endtime="20220302 13:03:49.613"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${otpBtn1}</arg>
-<arg>${otp_Value1}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220302 13:03:49.618" level="INFO">Typing text '0' into text field 'id=et_otp1'</msg>
-<status status="PASS" starttime="20220302 13:03:49.614" endtime="20220302 13:03:50.648"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:49.614" endtime="20220302 13:03:50.649"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${otpBtn2}</arg>
-<arg>${otp_Value2}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220302 13:03:50.653" level="INFO">Typing text '1' into text field 'id=et_otp2'</msg>
-<status status="PASS" starttime="20220302 13:03:50.649" endtime="20220302 13:03:51.630"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:50.649" endtime="20220302 13:03:51.630"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${otpBtn3}</arg>
-<arg>${otp_Value3}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220302 13:03:51.635" level="INFO">Typing text '2' into text field 'id=et_otp3'</msg>
-<status status="PASS" starttime="20220302 13:03:51.631" endtime="20220302 13:03:52.620"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:51.630" endtime="20220302 13:03:52.620"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${otpBtn4}</arg>
-<arg>${otp_Value4}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220302 13:03:52.625" level="INFO">Typing text '4' into text field 'id=et_otp4'</msg>
-<status status="PASS" starttime="20220302 13:03:52.621" endtime="20220302 13:03:53.673"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:52.621" endtime="20220302 13:03:53.673"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:38.109" endtime="20220302 13:03:53.673"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:38.108" endtime="20220302 13:03:53.674"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:38.107" endtime="20220302 13:03:53.675"/>
+<status status="FAIL" starttime="20220303 12:26:10.407" endtime="20220303 12:26:10.407">Parent suite setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output.
+</status>
 </test>
 <test id="s1-t2" name="Create_Post">
-<kw name="Create_PostinGroups" library="Createpost">
-<kw name="Wait for and click on Element" library="commons">
-<arg>${groups_Btn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:03:53.677" endtime="20220302 13:04:04.041"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:04.045" level="INFO">Clicking element 'id=action_in_app_groups'.</msg>
-<status status="PASS" starttime="20220302 13:04:04.041" endtime="20220302 13:04:04.973"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:53.676" endtime="20220302 13:04:04.973"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${click_AheadBtn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:04.973" endtime="20220302 13:04:07.238"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:07.242" level="INFO">Clicking element 'id=ic_move_next'.</msg>
-<status status="PASS" starttime="20220302 13:04:07.239" endtime="20220302 13:04:07.489"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:04.973" endtime="20220302 13:04:07.489"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${click_AheadBtn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:07.490" endtime="20220302 13:04:07.687"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:07.691" level="INFO">Clicking element 'id=ic_move_next'.</msg>
-<status status="PASS" starttime="20220302 13:04:07.687" endtime="20220302 13:04:08.452"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:07.489" endtime="20220302 13:04:08.453"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${done_Btn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:08.453" endtime="20220302 13:04:08.519"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:08.523" level="INFO">Clicking element 'id=tv_done'.</msg>
-<status status="PASS" starttime="20220302 13:04:08.519" endtime="20220302 13:04:10.634"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:08.453" endtime="20220302 13:04:10.634"/>
-</kw>
-<kw name="Wait for Element" library="commons">
-<arg>${wait_Btn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:10.635" endtime="20220302 13:04:10.703"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:10.634" endtime="20220302 13:04:10.703"/>
-</kw>
-<kw name="Click Test_data" library="commons">
-<arg>${group_name}</arg>
-<kw name="Click Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220302 13:04:10.704" endtime="20220302 13:04:11.293"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:10.704" endtime="20220302 13:04:11.293"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${creat_a_Post}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:11.294" endtime="20220302 13:04:15.878"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:15.887" level="INFO">Clicking element 'id=tv_sent_msg'.</msg>
-<status status="PASS" starttime="20220302 13:04:15.878" endtime="20220302 13:04:17.176"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:11.294" endtime="20220302 13:04:17.177"/>
-</kw>
-<kw name="Wait for Element" library="commons">
-<arg>${agree_btn1}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:17.179" endtime="20220302 13:04:22.005"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:17.178" endtime="20220302 13:04:22.006"/>
-</kw>
-<kw name="Click Test_data" library="commons">
-<arg>${agree_txt}</arg>
-<kw name="Click Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220302 13:04:22.007" endtime="20220302 13:04:22.436"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:22.006" endtime="20220302 13:04:22.436"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${add_Content}</arg>
-<arg>${data_val}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:22.444" level="INFO">Typing text 'i am alpesh dana i am a software development engineer in test nice to meet u all' into text field 'id=et_new_post'</msg>
-<status status="PASS" starttime="20220302 13:04:22.438" endtime="20220302 13:04:24.840"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:22.437" endtime="20220302 13:04:24.840"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${@_tag}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:24.841" endtime="20220302 13:04:26.197"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:26.203" level="INFO">Clicking element 'id=iv_tag'.</msg>
-<status status="PASS" starttime="20220302 13:04:26.197" endtime="20220302 13:04:26.386"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:24.840" endtime="20220302 13:04:26.386"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${camera}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:26.387" endtime="20220302 13:04:26.480"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:26.486" level="INFO">Clicking element 'id=iv_take_picture'.</msg>
-<status status="PASS" starttime="20220302 13:04:26.480" endtime="20220302 13:04:28.210"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:26.387" endtime="20220302 13:04:28.210"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${permission_camera}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:28.211" endtime="20220302 13:04:29.824"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:29.831" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/permission_allow_foreground_only_button'.</msg>
-<status status="PASS" starttime="20220302 13:04:29.825" endtime="20220302 13:04:30.345"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:28.210" endtime="20220302 13:04:30.345"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${Allow_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:30.346" endtime="20220302 13:04:31.069"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:31.075" level="INFO">Clicking element 'id=com.android.permissioncontroller:id/permission_allow_button'.</msg>
-<status status="PASS" starttime="20220302 13:04:31.070" endtime="20220302 13:04:31.203"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:30.345" endtime="20220302 13:04:31.203"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${camera_click}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:31.204" endtime="20220302 13:04:34.739"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:34.744" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc="Shutter"]'.</msg>
-<status status="PASS" starttime="20220302 13:04:34.739" endtime="20220302 13:04:37.226"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:31.204" endtime="20220302 13:04:37.226"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${done_btn1}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:37.226" endtime="20220302 13:04:38.765"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:38.769" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Done"]'.</msg>
-<status status="PASS" starttime="20220302 13:04:38.765" endtime="20220302 13:04:39.635"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:37.226" endtime="20220302 13:04:39.635"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${btn_continue}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:39.636" endtime="20220302 13:04:41.882"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:41.886" level="INFO">Clicking element 'id=btn_continue'.</msg>
-<status status="PASS" starttime="20220302 13:04:41.882" endtime="20220302 13:04:42.001"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:39.635" endtime="20220302 13:04:42.001"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${sent_postBtn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:42.002" endtime="20220302 13:04:43.788"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:43.791" level="INFO">Clicking element 'id=sent_post'.</msg>
-<status status="PASS" starttime="20220302 13:04:43.788" endtime="20220302 13:04:43.986"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:42.001" endtime="20220302 13:04:43.986"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:53.676" endtime="20220302 13:04:43.986"/>
-</kw>
-<status status="PASS" starttime="20220302 13:03:53.675" endtime="20220302 13:04:43.987"/>
+<status status="FAIL" starttime="20220303 12:26:10.418" endtime="20220303 12:26:10.419">Parent suite setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output.
+</status>
 </test>
 <test id="s1-t3" name="Repy_to_post">
-<kw name="Reply_post" library="Createpost">
-<kw name="Wait for and click on Element" library="commons">
-<arg>${reply_post}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:43.989" endtime="20220302 13:04:46.969"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:46.973" level="INFO">Clicking element 'id=et_create_post'.</msg>
-<status status="PASS" starttime="20220302 13:04:46.969" endtime="20220302 13:04:47.138"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:43.989" endtime="20220302 13:04:47.138"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${creat_a_Post}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:47.139" endtime="20220302 13:04:49.454"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:49.458" level="INFO">Clicking element 'id=tv_sent_msg'.</msg>
-<status status="PASS" starttime="20220302 13:04:49.454" endtime="20220302 13:04:49.615"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:47.138" endtime="20220302 13:04:49.616"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${add_Content}</arg>
-<arg>${data_val}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:49.620" level="INFO">Typing text 'i am alpesh dana i am a software development engineer in test nice to meet u all' into text field 'id=et_new_post'</msg>
-<status status="PASS" starttime="20220302 13:04:49.616" endtime="20220302 13:04:51.269"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:49.616" endtime="20220302 13:04:51.269"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${sent_postBtn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:51.270" endtime="20220302 13:04:51.390"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:51.395" level="INFO">Clicking element 'id=sent_post'.</msg>
-<status status="PASS" starttime="20220302 13:04:51.391" endtime="20220302 13:04:52.324"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:51.269" endtime="20220302 13:04:52.324"/>
-</kw>
-<kw name="Click A Specific Point" library="commons">
-<arg>${x}</arg>
-<arg>${y}</arg>
-<kw name="Click A Point" library="Zoomba.MobileLibrary">
-<arg>x=${element1}</arg>
-<arg>y=${element2}</arg>
-<arg>duration=100</arg>
-<doc>Click on a point</doc>
-<msg timestamp="20220302 13:04:52.328" level="INFO">Clicking on a point (62,280).</msg>
-<status status="PASS" starttime="20220302 13:04:52.325" endtime="20220302 13:04:54.233"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:52.324" endtime="20220302 13:04:54.233"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:43.988" endtime="20220302 13:04:54.233"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:43.988" endtime="20220302 13:04:54.234"/>
+<status status="FAIL" starttime="20220303 12:26:10.421" endtime="20220303 12:26:10.422">Parent suite setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output.
+</status>
 </test>
 <test id="s1-t4" name="Suggestion_message">
-<kw name="Hint_Suggestion" library="Createpost">
-<kw name="Wait for and click on Element" library="commons">
-<arg>${creat_a_Post}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:54.237" endtime="20220302 13:04:55.123"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:55.127" level="INFO">Clicking element 'id=tv_sent_msg'.</msg>
-<status status="PASS" starttime="20220302 13:04:55.124" endtime="20220302 13:04:55.282"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:54.236" endtime="20220302 13:04:55.282"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${hint_msg}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220302 13:04:55.283" endtime="20220302 13:04:56.894"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220302 13:04:56.897" level="INFO">Clicking element 'id=iv_post_hint'.</msg>
-<status status="PASS" starttime="20220302 13:04:56.894" endtime="20220302 13:04:57.030"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:55.282" endtime="20220302 13:04:57.030"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:54.236" endtime="20220302 13:04:57.030"/>
-</kw>
-<status status="PASS" starttime="20220302 13:04:54.235" endtime="20220302 13:04:57.030"/>
+<status status="FAIL" starttime="20220303 12:26:10.423" endtime="20220303 12:26:10.424">Parent suite setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output.
+</status>
 </test>
-<status status="PASS" starttime="20220302 13:03:07.770" endtime="20220302 13:04:57.032"/>
+<kw name="Close Apna Application" library="commons" type="TEARDOWN">
+<kw name="Close Application" library="Zoomba.MobileLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Save Appium Screenshot" library="Zoomba.MobileLibrary">
+<doc>Takes a screenshot with a unique filename to be stored in Robot Framework compiled
+reports.</doc>
+<msg timestamp="20220303 12:26:10.433" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20220303 12:26:10.429" endtime="20220303 12:26:10.433"/>
+</kw>
+<msg timestamp="20220303 12:26:10.438" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220303 12:26:10.439" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20220303 12:26:10.428" endtime="20220303 12:26:10.440"/>
+</kw>
+<status status="FAIL" starttime="20220303 12:26:10.427" endtime="20220303 12:26:10.440">No application is open</status>
+</kw>
+<status status="FAIL" starttime="20220303 12:25:36.545" endtime="20220303 12:26:10.440">Suite setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized. Make sure the application under test does not crash and investigate the logcat output.
+
+
+Also suite teardown failed:
+No application is open</status>
 </suite>
 <statistics>
 <total>
-<stat pass="4" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="4" fail="0" skip="0" id="s1" name="Create ReplyPost">Create ReplyPost</stat>
+<stat pass="0" fail="4" skip="0" id="s1" name="Create ReplyPost">Create ReplyPost</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220303 12:26:10.402" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220303 12:26:10.438" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>

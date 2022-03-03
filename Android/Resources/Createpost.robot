@@ -12,7 +12,7 @@ openapnapp
 enter_numberLogin
    Enter_Mobile_no
 
-Create_PostinGroups
+Create_Post_inGroups
     Wait for and click on Element  ${groups_Btn}
     Wait for and click on Element  ${click_AheadBtn}
     Wait for and click on Element  ${click_AheadBtn}
