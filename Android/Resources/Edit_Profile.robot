@@ -10,8 +10,9 @@ Resource  ../POM/commons.robot
 openapnapp
    OpenApnaApp
 
-enter no To Login
+editProfile_Login
    Enter_Mobile_no
+   
 ViewProfile
     Wait for and click on Element  ${viewProfile}
 

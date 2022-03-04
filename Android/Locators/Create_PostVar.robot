@@ -18,4 +18,6 @@ ${btn_continue}  id=btn_continue
 ${sent_postBtn}  id=sent_post
 ${reply_post}  id=et_create_post
 ${hint_msg}  id=iv_post_hint
+${get_msg}  id=tv_message_hint
+
 

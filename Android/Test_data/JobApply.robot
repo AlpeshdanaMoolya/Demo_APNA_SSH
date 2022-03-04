@@ -3,7 +3,8 @@
 
 ${search for job via search box}  account
 ${Software_Developer}  Software Engineer
-${job_title}  Accounting consultant
+${job_title}  Account Admin
+
 
 ${softwareDeveloporobCard1}  Software Engineer
 ${click_outside1}  Tap anywhere to continue

@@ -9,7 +9,7 @@ Resource  ../POM/commons.robot
 openapnapp
    OpenApnaApp
 
-enter_no_Login
+userConnect_Login
    Enter_Mobile_no
 
 Open Connect Page
@@ -23,7 +23,7 @@ Open Connect Page
    Click A Specific Point  533  1337  
    Click A Specific Point  533  1337  
    Click A Specific Point  533  1337 
-   Click A Specific Point  533  1337 
+   
 #    Scroll Down  ${waitForIt}
    Wait for Element  ${waitForIt}
    Click Test_data  ${FriendConnect}

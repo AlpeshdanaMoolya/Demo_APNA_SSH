@@ -7,8 +7,8 @@ Suite Setup  OpenApnaApp
 *** Test Cases ***
 
 
-enterNumber
-   enter no To Login
+apply_job_login_flow
+   applyJob_Login
 
 selectingAJob -
     Searchforajob

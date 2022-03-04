@@ -9,24 +9,28 @@ Resource  ../POM/commons.robot
 openapnapp
    OpenApnaApp
 
-enter no To Login
+applyJob_Login
    Enter_Mobile_no
     
 Searchforajob
     Wait for and click on Element  ${search by title,company,ex-clerk}
     Wait for and click on Element  ${searchinputboxclick}
     Input Test Data  ${searchinputboxclick}   ${search for job via search box}
-    Wait for and click on Element  ${tv_PopularJobs}
-   #  Click Element   ${Popular tags}
-    Wait for Element  ${selectAdminjobid}
-    Click Test_data  ${job_title}
+    Wait for Element  ${tv_PopularJobs}
+    Click Element   ${tv_PopularJobs}
+    Wait for and click on Element  ${selectAdminjobid}
+   #  Click Test_data  ${job_title}
     Wait for and click on Element  ${apply for jobid}
     # English questions
     Wait for and click on Element  ${job specific Question Aadhar 1}
+    Wait for and click on Element  ${job specific Question Aadhar 1}
+    Wait for and click on Element  ${job specific Question Aadhar 1}
+    Wait for and click on Element  ${job specific Question Aadhar 1}
+    
     Wait for and click on Element  ${click Next Btn}
     Wait for and click on Element  ${agree_btn}
     
-    Wait for and click on Element  ${back_btn}
+   #  Wait for and click on Element  ${back_btn}
 
    #  Click Test_data  ${click_outside}
    #  Wait for and click on Element  ${yes_i_talkHR}

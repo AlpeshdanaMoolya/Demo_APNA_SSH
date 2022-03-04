@@ -38,6 +38,7 @@ Create_Post_inGroups
 Reply_post
    Wait for and click on Element  ${reply_post}
    Wait for and click on Element  ${creat_a_Post}
+   Wait for Element  ${add_Content}
    Input Test Data  ${add_Content}  ${data_val}
    Wait for and click on Element  ${sent_postBtn}
    Click A Specific Point  ${x}  ${y}
@@ -45,6 +46,6 @@ Reply_post
 Hint_Suggestion
    Wait for and click on Element  ${creat_a_Post}
    Wait for and click on Element  ${hint_msg}
-
+   ${message_name}	Get Text  ${get_msg}
 
     

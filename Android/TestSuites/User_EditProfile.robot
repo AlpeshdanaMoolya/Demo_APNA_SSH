@@ -2,14 +2,12 @@
 Library     OperatingSystem
 Resource  ../Resources/Edit_Profile.robot
 Resource  ../POM/commons.robot
-Suite Setup  OpenApnaApp  
+Suite Setup  OpenApnaApp 
 Suite Teardown   Close Apna Application
 *** Test Cases ***
 
-
-enterNumber
-   enter no To Login
-
+Login_Num_flow
+   editProfile_Login
 
 toViewProfile
     ViewProfile

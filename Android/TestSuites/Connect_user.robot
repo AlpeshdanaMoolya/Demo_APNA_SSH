@@ -8,7 +8,7 @@ Suite Teardown   Close Apna Application
 
 
 enterNumber
-   enter_no_Login
+   userConnect_Login
 
 
 OpenConnect

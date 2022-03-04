@@ -3,7 +3,7 @@
 
 #Text Type
 
-${number1}  2288990006
+${number1}  9876554430
 ${otpValue1}  0
 ${otpValue2}  1
 ${otpValue3}  2
@@ -31,4 +31,5 @@ ${select Second Job Role}  Cook / Chef / Baker
 
 ${FolderName}  Download
 ${continue button text}  Continue
+${done_btn}  Done
 

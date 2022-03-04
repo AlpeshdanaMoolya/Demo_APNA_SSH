@@ -1,6 +1,6 @@
 *** Variables ***
 
 #User connection flow
-${FriendConnect}  Michael J Scott Dude
+${FriendConnect}  Michael Scott
 
 ${username1}  Voot Bond

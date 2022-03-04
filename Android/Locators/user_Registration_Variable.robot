@@ -1,18 +1,5 @@
 *** Variables *** 
 
-#Enter number and OTP
-${notAboveNumber}  id=com.google.android.gms:id/cancel
-${editText}  id=et_login_number
-
-${submit_btn}  id=btn_send
-${otpBtn1}  id=et_otp1
-
-${otpBtn2}  id=et_otp2
-
-${otpBtn3}  id=et_otp3
-
-${otpBtn4}  id=et_otp4
-
 
 #Select Language
 ${selectEngLang}  id=tv_lang_head
@@ -71,9 +58,10 @@ ${savejobDetailBtn}  id=btn_save
 #image upload page
 ${choosefromgallerybtn}  id=tv_chose_from_gallery
 ${Allowbtn}  id=com.android.permissioncontroller:id/permission_allow_button
-${clickDownloadBtn}  id=com.google.android.apps.photos:id/title
+${clickDownloadBtn}  id=com.android.gallery3d:id/gl_root_view
 
-${selectImage}  xpath=//android.view.ViewGroup[@content-desc="Photo taken on Feb 28, 2022 11:10:30 PM"]
+${selectImage}  xpath=/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.view.View
+
 
 ${crop accept button}  id=ucrop_btn_crop
 
