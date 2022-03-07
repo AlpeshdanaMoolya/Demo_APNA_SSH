@@ -17,7 +17,11 @@ ${done_btn1}  xpath=//android.widget.ImageButton[@content-desc="Done"]
 ${btn_continue}  id=btn_continue
 ${sent_postBtn}  id=sent_post
 ${reply_post}  id=et_create_post
+${agree_msg}  id=tv_guideline_agree
 ${hint_msg}  id=iv_post_hint
 ${get_msg}  id=tv_message_hint
+${get_msgXpath}  xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.view.ViewGroup[2]/android.widget.ScrollView/android.widget.TextView
 
-
+${arrow_btn}  id=iv_arrow_right
+${use_msg}  id=tv_use_this_message
+${ok1_btn}  id=tv_ok

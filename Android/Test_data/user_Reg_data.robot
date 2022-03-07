@@ -3,7 +3,7 @@
 
 #Text Type
 
-${number1}  9876554430
+${number1}  9870138800
 ${otpValue1}  0
 ${otpValue2}  1
 ${otpValue3}  2

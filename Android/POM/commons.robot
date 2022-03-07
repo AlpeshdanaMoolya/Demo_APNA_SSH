@@ -49,13 +49,6 @@ Enter_Mobile_no
    Input Test Data  ${otpBtn3}  ${otp_Value3}
    Input Test Data  ${otpBtn4}  ${otp_Value4}
 
-for_loop
-   [Arguments]  ${element1}  ${VALUES} 
-   FOR	${element1}	IN	@{VALUES}
-   Run Keyword If	'${element1}' == 'CONTINUE'	Continue For Loop
-   Do Something	${element1}	
-   END	
-
 
 Close Apna Application
     Close Application
