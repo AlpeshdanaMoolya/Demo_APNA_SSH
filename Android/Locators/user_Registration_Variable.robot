@@ -20,7 +20,7 @@ ${citySelectID}  id=row_interested_job_tv_title
 ${SearchBtn}  id=search_src_text
 
 
-${gender}   id=iv_female_tick
+${gender}   id=iv_male_tick
 ${nextBtn}  id=act_profile_info_btn_continue
 
 #Experience Details

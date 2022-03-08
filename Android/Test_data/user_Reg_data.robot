@@ -12,7 +12,7 @@ ${otpValue4}  4
 ${textLang}  English
 
 ${textGo}  Let’s go!
-${NameValue}  Shalini
+${NameValue}  Alpesh dana
 ${CityValue}  Mumb
 ${CityNameBtn}  Mumbai
 ${search_Live_City}   agar

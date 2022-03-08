@@ -7,4 +7,4 @@ Suite Teardown   Close Apna Application
 *** Test Cases ***
 
 Login_Num_flow
-   Login_Num
+   AlreadyReg_Number_flow

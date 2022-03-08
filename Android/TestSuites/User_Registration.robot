@@ -7,26 +7,24 @@ Suite Setup  OpenApnaApp
 Suite Teardown   Close Apna Application
 *** Test Cases ***
 
-
-User_Reg_flow
-   NewUser_Registration
-
+New_User_Authorization
+    mobile_Number_flow
 
 languageSelection
-    selectLanguage
+    Launguage_flow
 
 createProfile
-    profileCreation
+    User_Profile_flow
 
 
 detailsOfExperience
-    experienceDetails
+    Experience_Details_flow
 
 detailsOfEducation
-    educationDetails
+    Edu_Details_Flow
 
 selectionOfJob
-    preferedjobSelection
+    Job_category_Flow
 
-profilePictureChoice
-    profilePicUploading
+Pic_Upload_Flow
+    Profile_Pic_Flow

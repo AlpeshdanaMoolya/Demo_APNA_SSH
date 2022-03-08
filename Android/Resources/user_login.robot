@@ -1,14 +1,11 @@
 *** Settings ***
 Library    Zoomba.MobileLibrary
-Resource  ../Test_data/Loggedin_user.robot
-Resource  ../Locators/User_login_Variable.robot
-Resource  ../Capablities/Desred_cap.robot
-Resource  ../POM/commons.robot
+Resource  ../POM/loginPageSteps.robot
 
 *** Keywords ***
 
-openapnapp
-   OpenApnaApp
+# openapnapp
+#    Launch_Login_Application
 
-Login_Num
-   Enter_Mobile_no
+AlreadyReg_Number_flow
+   Login__Mobile_no
