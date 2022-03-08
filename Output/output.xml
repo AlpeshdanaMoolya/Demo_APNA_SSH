@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220307 16:23:01.538" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220308 12:59:37.203" rpa="false" schemaversion="2">
 <suite id="s1" name="Create ReplyPost" source="D:\apna\Demo_APNA_SSH\Android\TestSuites\Create_ReplyPost.robot">
 <kw name="OpenApnaApp" library="commons" type="SETUP">
 <kw name="Open Application" library="Zoomba.MobileLibrary">
@@ -14,9 +14,9 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220307 16:23:01.879" endtime="20220307 16:23:17.885"/>
+<status status="PASS" starttime="20220308 12:59:37.534" endtime="20220308 12:59:56.431"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:01.878" endtime="20220307 16:23:17.885"/>
+<status status="PASS" starttime="20220308 12:59:37.533" endtime="20220308 12:59:56.431"/>
 </kw>
 <test id="s1-t1" name="enterNumber">
 <kw name="enter_numberLogin" library="Createpost">
@@ -27,15 +27,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:17.890" endtime="20220307 16:23:21.937"/>
+<status status="PASS" starttime="20220308 12:59:56.433" endtime="20220308 13:00:00.089"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:21.940" level="INFO">Clicking element 'id=et_login_number'.</msg>
-<status status="PASS" starttime="20220307 16:23:21.937" endtime="20220307 16:23:23.182"/>
+<msg timestamp="20220308 13:00:00.092" level="INFO">Clicking element 'id=et_login_number'.</msg>
+<status status="PASS" starttime="20220308 13:00:00.089" endtime="20220308 13:00:00.687"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:17.889" endtime="20220307 16:23:23.182"/>
+<status status="PASS" starttime="20220308 12:59:56.433" endtime="20220308 13:00:00.687"/>
 </kw>
 <kw name="Input Test Data" library="commons">
 <arg>${editText}</arg>
@@ -44,10 +44,10 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:23.188" level="INFO">Typing text '9870138803' into text field 'id=et_login_number'</msg>
-<status status="PASS" starttime="20220307 16:23:23.184" endtime="20220307 16:23:23.918"/>
+<msg timestamp="20220308 13:00:00.690" level="INFO">Typing text '8876432103' into text field 'id=et_login_number'</msg>
+<status status="PASS" starttime="20220308 13:00:00.687" endtime="20220308 13:00:02.018"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:23.183" endtime="20220307 16:23:23.918"/>
+<status status="PASS" starttime="20220308 13:00:00.687" endtime="20220308 13:00:02.019"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${submit_btn}</arg>
@@ -55,15 +55,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:23.919" endtime="20220307 16:23:24.028"/>
+<status status="PASS" starttime="20220308 13:00:02.019" endtime="20220308 13:00:02.111"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:24.032" level="INFO">Clicking element 'id=btn_send'.</msg>
-<status status="PASS" starttime="20220307 16:23:24.028" endtime="20220307 16:23:24.679"/>
+<msg timestamp="20220308 13:00:02.114" level="INFO">Clicking element 'id=btn_send'.</msg>
+<status status="PASS" starttime="20220308 13:00:02.112" endtime="20220308 13:00:02.718"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:23.918" endtime="20220307 16:23:24.680"/>
+<status status="PASS" starttime="20220308 13:00:02.019" endtime="20220308 13:00:02.718"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${otpBtn1}</arg>
@@ -71,15 +71,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:24.681" endtime="20220307 16:23:27.090"/>
+<status status="PASS" starttime="20220308 13:00:02.719" endtime="20220308 13:00:05.134"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:27.094" level="INFO">Clicking element 'id=et_otp1'.</msg>
-<status status="PASS" starttime="20220307 16:23:27.090" endtime="20220307 16:23:28.130"/>
+<msg timestamp="20220308 13:00:05.137" level="INFO">Clicking element 'id=et_otp1'.</msg>
+<status status="PASS" starttime="20220308 13:00:05.134" endtime="20220308 13:00:06.220"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:24.680" endtime="20220307 16:23:28.130"/>
+<status status="PASS" starttime="20220308 13:00:02.718" endtime="20220308 13:00:06.220"/>
 </kw>
 <kw name="Input Test Data" library="commons">
 <arg>${otpBtn1}</arg>
@@ -88,10 +88,10 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:28.134" level="INFO">Typing text '1' into text field 'id=et_otp1'</msg>
-<status status="PASS" starttime="20220307 16:23:28.131" endtime="20220307 16:23:29.083"/>
+<msg timestamp="20220308 13:00:06.224" level="INFO">Typing text '6' into text field 'id=et_otp1'</msg>
+<status status="PASS" starttime="20220308 13:00:06.221" endtime="20220308 13:00:07.154"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:28.130" endtime="20220307 16:23:29.084"/>
+<status status="PASS" starttime="20220308 13:00:06.220" endtime="20220308 13:00:07.154"/>
 </kw>
 <kw name="Input Test Data" library="commons">
 <arg>${otpBtn2}</arg>
@@ -100,10 +100,10 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:29.088" level="INFO">Typing text '0' into text field 'id=et_otp2'</msg>
-<status status="PASS" starttime="20220307 16:23:29.084" endtime="20220307 16:23:30.134"/>
+<msg timestamp="20220308 13:00:07.158" level="INFO">Typing text '9' into text field 'id=et_otp2'</msg>
+<status status="PASS" starttime="20220308 13:00:07.155" endtime="20220308 13:00:08.207"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:29.084" endtime="20220307 16:23:30.134"/>
+<status status="PASS" starttime="20220308 13:00:07.154" endtime="20220308 13:00:08.207"/>
 </kw>
 <kw name="Input Test Data" library="commons">
 <arg>${otpBtn3}</arg>
@@ -112,10 +112,10 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:30.138" level="INFO">Typing text '0' into text field 'id=et_otp3'</msg>
-<status status="PASS" starttime="20220307 16:23:30.134" endtime="20220307 16:23:31.089"/>
+<msg timestamp="20220308 13:00:08.211" level="INFO">Typing text '0' into text field 'id=et_otp3'</msg>
+<status status="PASS" starttime="20220308 13:00:08.208" endtime="20220308 13:00:09.187"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:30.134" endtime="20220307 16:23:31.089"/>
+<status status="PASS" starttime="20220308 13:00:08.208" endtime="20220308 13:00:09.187"/>
 </kw>
 <kw name="Input Test Data" library="commons">
 <arg>${otpBtn4}</arg>
@@ -124,16 +124,16 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>${value}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:31.093" level="INFO">Typing text '1' into text field 'id=et_otp4'</msg>
-<status status="PASS" starttime="20220307 16:23:31.090" endtime="20220307 16:23:32.056"/>
+<msg timestamp="20220308 13:00:09.191" level="INFO">Typing text '1' into text field 'id=et_otp4'</msg>
+<status status="PASS" starttime="20220308 13:00:09.188" endtime="20220308 13:00:10.115"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:31.089" endtime="20220307 16:23:32.056"/>
+<status status="PASS" starttime="20220308 13:00:09.187" endtime="20220308 13:00:10.115"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:17.889" endtime="20220307 16:23:32.057"/>
+<status status="PASS" starttime="20220308 12:59:56.432" endtime="20220308 13:00:10.115"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:17.888" endtime="20220307 16:23:32.057"/>
+<status status="PASS" starttime="20220308 12:59:56.432" endtime="20220308 13:00:10.116"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:17.886" endtime="20220307 16:23:32.057"/>
+<status status="PASS" starttime="20220308 12:59:56.431" endtime="20220308 13:00:10.116"/>
 </test>
 <test id="s1-t2" name="Create_Post">
 <kw name="Create_Post_inGroups" library="Createpost">
@@ -143,15 +143,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:32.060" endtime="20220307 16:23:38.028"/>
+<status status="PASS" starttime="20220308 13:00:10.119" endtime="20220308 13:00:19.720"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:38.032" level="INFO">Clicking element 'id=action_in_app_groups'.</msg>
-<status status="PASS" starttime="20220307 16:23:38.028" endtime="20220307 16:23:39.979"/>
+<msg timestamp="20220308 13:00:19.723" level="INFO">Clicking element 'id=action_in_app_groups'.</msg>
+<status status="PASS" starttime="20220308 13:00:19.720" endtime="20220308 13:00:20.733"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:32.059" endtime="20220307 16:23:39.979"/>
+<status status="PASS" starttime="20220308 13:00:10.118" endtime="20220308 13:00:20.733"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${click_AheadBtn}</arg>
@@ -159,15 +159,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:39.980" endtime="20220307 16:23:42.746"/>
+<status status="PASS" starttime="20220308 13:00:20.734" endtime="20220308 13:00:22.261"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:42.749" level="INFO">Clicking element 'id=ic_move_next'.</msg>
-<status status="PASS" starttime="20220307 16:23:42.746" endtime="20220307 16:23:42.862"/>
+<msg timestamp="20220308 13:00:22.265" level="INFO">Clicking element 'id=ic_move_next'.</msg>
+<status status="PASS" starttime="20220308 13:00:22.261" endtime="20220308 13:00:23.618"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:39.979" endtime="20220307 16:23:42.863"/>
+<status status="PASS" starttime="20220308 13:00:20.733" endtime="20220308 13:00:23.618"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${click_AheadBtn}</arg>
@@ -175,15 +175,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:42.863" endtime="20220307 16:23:43.117"/>
+<status status="PASS" starttime="20220308 13:00:23.619" endtime="20220308 13:00:23.875"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:43.122" level="INFO">Clicking element 'id=ic_move_next'.</msg>
-<status status="PASS" starttime="20220307 16:23:43.118" endtime="20220307 16:23:43.733"/>
+<msg timestamp="20220308 13:00:23.879" level="INFO">Clicking element 'id=ic_move_next'.</msg>
+<status status="PASS" starttime="20220308 13:00:23.875" endtime="20220308 13:00:24.570"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:42.863" endtime="20220307 16:23:43.733"/>
+<status status="PASS" starttime="20220308 13:00:23.618" endtime="20220308 13:00:24.570"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${done_Btn}</arg>
@@ -191,15 +191,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:43.734" endtime="20220307 16:23:43.781"/>
+<status status="PASS" starttime="20220308 13:00:24.571" endtime="20220308 13:00:25.428"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:43.784" level="INFO">Clicking element 'id=tv_done'.</msg>
-<status status="PASS" starttime="20220307 16:23:43.781" endtime="20220307 16:23:44.662"/>
+<msg timestamp="20220308 13:00:25.432" level="INFO">Clicking element 'id=tv_done'.</msg>
+<status status="PASS" starttime="20220308 13:00:25.429" endtime="20220308 13:00:27.273"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:43.734" endtime="20220307 16:23:44.662"/>
+<status status="PASS" starttime="20220308 13:00:24.570" endtime="20220308 13:00:27.273"/>
 </kw>
 <kw name="Wait for Element" library="commons">
 <arg>${wait_Btn}</arg>
@@ -207,40 +207,40 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:44.663" endtime="20220307 16:23:46.087"/>
+<status status="PASS" starttime="20220308 13:00:27.274" endtime="20220308 13:00:27.351"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:44.662" endtime="20220307 16:23:46.087"/>
+<status status="PASS" starttime="20220308 13:00:27.273" endtime="20220308 13:00:27.352"/>
 </kw>
 <kw name="Click Test_data" library="commons">
 <arg>${group_name}</arg>
 <kw name="Click Text" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220307 16:23:46.088" endtime="20220307 16:23:46.731"/>
+<status status="PASS" starttime="20220308 13:00:27.352" endtime="20220308 13:00:28.035"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:46.087" endtime="20220307 16:23:46.731"/>
+<status status="PASS" starttime="20220308 13:00:27.352" endtime="20220308 13:00:28.035"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:32.059" endtime="20220307 16:23:46.731"/>
+<status status="PASS" starttime="20220308 13:00:10.118" endtime="20220308 13:00:28.036"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:32.058" endtime="20220307 16:23:46.732"/>
+<status status="PASS" starttime="20220308 13:00:10.117" endtime="20220308 13:00:28.036"/>
 </test>
-<test id="s1-t3" name="Suggestion_message">
-<kw name="Hint_Suggestion1" library="Createpost">
+<test id="s1-t3" name="Hint_base">
+<kw name="Suggestion_BroilerPlate" library="Createpost">
 <kw name="Wait for and click on Element" library="commons">
 <arg>${creat_a_Post}</arg>
 <kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:46.735" endtime="20220307 16:23:49.165"/>
+<status status="PASS" starttime="20220308 13:00:28.039" endtime="20220308 13:00:31.665"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:49.170" level="INFO">Clicking element 'id=tv_sent_msg'.</msg>
-<status status="PASS" starttime="20220307 16:23:49.166" endtime="20220307 16:23:51.329"/>
+<msg timestamp="20220308 13:00:31.669" level="INFO">Clicking element 'id=tv_sent_msg'.</msg>
+<status status="PASS" starttime="20220308 13:00:31.666" endtime="20220308 13:00:32.558"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:46.734" endtime="20220307 16:23:51.329"/>
+<status status="PASS" starttime="20220308 13:00:28.038" endtime="20220308 13:00:32.558"/>
 </kw>
 <kw name="Wait for Element" library="commons">
 <arg>${agree_btn1}</arg>
@@ -248,18 +248,18 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:51.330" endtime="20220307 16:23:51.428"/>
+<status status="PASS" starttime="20220308 13:00:32.559" endtime="20220308 13:00:33.872"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:51.329" endtime="20220307 16:23:51.428"/>
+<status status="PASS" starttime="20220308 13:00:32.559" endtime="20220308 13:00:33.872"/>
 </kw>
 <kw name="Click Test_data" library="commons">
 <arg>${agree_txt}</arg>
 <kw name="Click Text" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220307 16:23:51.429" endtime="20220307 16:23:51.612"/>
+<status status="PASS" starttime="20220308 13:00:33.872" endtime="20220308 13:00:35.155"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:51.429" endtime="20220307 16:23:51.612"/>
+<status status="PASS" starttime="20220308 13:00:33.872" endtime="20220308 13:00:35.155"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${hint_msg}</arg>
@@ -267,15 +267,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:51.612" endtime="20220307 16:23:51.903"/>
+<status status="PASS" starttime="20220308 13:00:35.156" endtime="20220308 13:00:35.187"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:51.909" level="INFO">Clicking element 'id=iv_post_hint'.</msg>
-<status status="PASS" starttime="20220307 16:23:51.904" endtime="20220307 16:23:52.759"/>
+<msg timestamp="20220308 13:00:35.191" level="INFO">Clicking element 'id=iv_post_hint'.</msg>
+<status status="PASS" starttime="20220308 13:00:35.188" endtime="20220308 13:00:35.285"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:51.612" endtime="20220307 16:23:52.759"/>
+<status status="PASS" starttime="20220308 13:00:35.155" endtime="20220308 13:00:35.285"/>
 </kw>
 <kw name="Wait for Element" library="commons">
 <arg>${get_msg}</arg>
@@ -283,38 +283,52 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:52.760" endtime="20220307 16:23:54.169"/>
+<status status="PASS" starttime="20220308 13:00:35.286" endtime="20220308 13:00:36.585"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:52.759" endtime="20220307 16:23:54.169"/>
+<status status="PASS" starttime="20220308 13:00:35.286" endtime="20220308 13:00:36.585"/>
 </kw>
+<status status="PASS" starttime="20220308 13:00:28.038" endtime="20220308 13:00:36.585"/>
+</kw>
+<status status="PASS" starttime="20220308 13:00:28.037" endtime="20220308 13:00:36.586"/>
+</test>
+<test id="s1-t4" name="Suggestion_message">
+<kw name="if_condition_flow" library="Createpost">
 <kw name="Get Text" library="Zoomba.MobileLibrary">
 <var>${Text}</var>
 <arg>${get_msg}</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<msg timestamp="20220307 16:23:54.215" level="INFO">Element 'id=tv_message_hint' text is 'Hi, what is the reporting system in your company ? I have to everyday in theevening before logging out do _ _ _ _.' </msg>
-<msg timestamp="20220307 16:23:54.215" level="INFO">${Text} = Hi, what is the reporting system in your company ? I have to everyday in theevening before logging out do _ _ _ _.</msg>
-<status status="PASS" starttime="20220307 16:23:54.170" endtime="20220307 16:23:54.215"/>
+<msg timestamp="20220308 13:00:36.644" level="INFO">Element 'id=tv_message_hint' text is 'Hi everybody. How are you today? In my company, I have _ _ _ _ hours ofwork. WHat about yours?' </msg>
+<msg timestamp="20220308 13:00:36.644" level="INFO">${Text} = Hi everybody. How are you today? In my company, I have _ _ _ _ hours ofwork. WHat about yours?</msg>
+<status status="PASS" starttime="20220308 13:00:36.588" endtime="20220308 13:00:36.644"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${Text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220307 16:23:54.215" endtime="20220307 16:23:54.216"/>
+<status status="PASS" starttime="20220308 13:00:36.645" endtime="20220308 13:00:36.645"/>
 </kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Text}' == '---'</arg>
+<arg>Run Keyword</arg>
+<arg>Hint_Suggestion</arg>
+<arg>ELSE</arg>
+<arg>Hint_Suggestion1</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Hint_Suggestion1" library="Createpost">
 <kw name="Wait for and click on Element" library="commons">
 <arg>${use_msg}</arg>
 <kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:54.217" endtime="20220307 16:23:54.248"/>
+<status status="PASS" starttime="20220308 13:00:36.646" endtime="20220308 13:00:36.679"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:54.251" level="INFO">Clicking element 'id=tv_use_this_message'.</msg>
-<status status="PASS" starttime="20220307 16:23:54.248" endtime="20220307 16:23:54.344"/>
+<msg timestamp="20220308 13:00:36.682" level="INFO">Clicking element 'id=tv_use_this_message'.</msg>
+<status status="PASS" starttime="20220308 13:00:36.680" endtime="20220308 13:00:36.751"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:54.216" endtime="20220307 16:23:54.344"/>
+<status status="PASS" starttime="20220308 13:00:36.646" endtime="20220308 13:00:36.751"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${sent_postBtn}</arg>
@@ -322,15 +336,15 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:54.345" endtime="20220307 16:23:54.725"/>
+<status status="PASS" starttime="20220308 13:00:36.751" endtime="20220308 13:00:37.102"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:54.730" level="INFO">Clicking element 'id=sent_post'.</msg>
-<status status="PASS" starttime="20220307 16:23:54.726" endtime="20220307 16:23:55.464"/>
+<msg timestamp="20220308 13:00:37.105" level="INFO">Clicking element 'id=sent_post'.</msg>
+<status status="PASS" starttime="20220308 13:00:37.102" endtime="20220308 13:00:37.808"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:54.345" endtime="20220307 16:23:55.464"/>
+<status status="PASS" starttime="20220308 13:00:36.751" endtime="20220308 13:00:37.808"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${ok1_btn}</arg>
@@ -338,25 +352,25 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:55.465" endtime="20220307 16:23:56.561"/>
+<status status="PASS" starttime="20220308 13:00:37.808" endtime="20220308 13:00:38.889"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:56.564" level="INFO">Clicking element 'id=tv_ok'.</msg>
-<status status="PASS" starttime="20220307 16:23:56.561" endtime="20220307 16:23:57.640"/>
+<msg timestamp="20220308 13:00:38.892" level="INFO">Clicking element 'id=tv_ok'.</msg>
+<status status="PASS" starttime="20220308 13:00:38.889" endtime="20220308 13:00:38.984"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:55.464" endtime="20220307 16:23:57.640"/>
+<status status="PASS" starttime="20220308 13:00:37.808" endtime="20220308 13:00:38.984"/>
 </kw>
 <kw name="Press Keycode" library="Zoomba.MobileLibrary">
 <arg>22</arg>
 <doc>Sends a press of keycode to the device.</doc>
-<status status="PASS" starttime="20220307 16:23:57.640" endtime="20220307 16:23:57.710"/>
+<status status="PASS" starttime="20220308 13:00:38.985" endtime="20220308 13:00:39.401"/>
 </kw>
 <kw name="Press Keycode" library="Zoomba.MobileLibrary">
 <arg>8</arg>
 <doc>Sends a press of keycode to the device.</doc>
-<status status="PASS" starttime="20220307 16:23:57.710" endtime="20220307 16:23:58.547"/>
+<status status="PASS" starttime="20220308 13:00:39.401" endtime="20220308 13:00:40.165"/>
 </kw>
 <kw name="Wait for and click on Element" library="commons">
 <arg>${sent_postBtn}</arg>
@@ -364,43 +378,47 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>${element}</arg>
 <arg>timeout=60s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220307 16:23:58.548" endtime="20220307 16:23:59.263"/>
+<status status="PASS" starttime="20220308 13:00:40.166" endtime="20220308 13:00:40.863"/>
 </kw>
 <kw name="Click Element" library="Zoomba.MobileLibrary">
 <arg>${element}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220307 16:23:59.266" level="INFO">Clicking element 'id=sent_post'.</msg>
-<status status="PASS" starttime="20220307 16:23:59.263" endtime="20220307 16:23:59.343"/>
+<msg timestamp="20220308 13:00:40.867" level="INFO">Clicking element 'id=sent_post'.</msg>
+<status status="PASS" starttime="20220308 13:00:40.864" endtime="20220308 13:00:40.958"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:58.547" endtime="20220307 16:23:59.343"/>
+<status status="PASS" starttime="20220308 13:00:40.165" endtime="20220308 13:00:40.959"/>
+</kw>
+<status status="PASS" starttime="20220308 13:00:36.646" endtime="20220308 13:00:40.959"/>
+</kw>
+<status status="PASS" starttime="20220308 13:00:36.646" endtime="20220308 13:00:40.959"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>30s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220307 16:24:29.346" level="INFO">Slept 30 seconds</msg>
-<status status="PASS" starttime="20220307 16:23:59.343" endtime="20220307 16:24:29.346"/>
+<msg timestamp="20220308 13:01:10.963" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20220308 13:00:40.959" endtime="20220308 13:01:10.963"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:46.734" endtime="20220307 16:24:29.347"/>
+<status status="PASS" starttime="20220308 13:00:36.587" endtime="20220308 13:01:10.964"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:46.733" endtime="20220307 16:24:29.348"/>
+<status status="PASS" starttime="20220308 13:00:36.587" endtime="20220308 13:01:10.965"/>
 </test>
 <kw name="Close Apna Application" library="commons" type="TEARDOWN">
 <kw name="Close Application" library="Zoomba.MobileLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220307 16:24:29.380" endtime="20220307 16:24:30.742"/>
+<status status="PASS" starttime="20220308 13:01:10.969" endtime="20220308 13:01:12.216"/>
 </kw>
-<status status="PASS" starttime="20220307 16:24:29.379" endtime="20220307 16:24:30.742"/>
+<status status="PASS" starttime="20220308 13:01:10.968" endtime="20220308 13:01:12.216"/>
 </kw>
-<status status="PASS" starttime="20220307 16:23:01.540" endtime="20220307 16:24:30.742"/>
+<status status="PASS" starttime="20220308 12:59:37.205" endtime="20220308 13:01:12.216"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Create ReplyPost">Create ReplyPost</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Create ReplyPost">Create ReplyPost</stat>
 </suite>
 </statistics>
 <errors>

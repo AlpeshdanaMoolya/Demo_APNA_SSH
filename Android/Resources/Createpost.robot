@@ -4,6 +4,7 @@ Resource  ../Locators/Create_PostVar.robot
 Resource  ../Test_data/create_Post_replypost.robot
 Resource  ../POM/commons.robot
 Library  String
+Library  BuiltIn
 
 *** Keywords ***
 
@@ -43,29 +44,29 @@ Create_Post_inGroups
 #    Wait for and click on Element  ${sent_postBtn}
 #    Click A Specific Point  ${x}  ${y}
 
-# Hint_Suggestion
-#    Wait for and click on Element  ${creat_a_Post}
-#    Wait for Element  ${agree_btn1}
-#    Click Test_data  ${agree_txt}
-#    Wait for and click on Element  ${hint_msg}
-#    Wait for Element  ${get_msg}
-#    ${Text}  Get Text	 ${get_msg}
-#    Log to console  ${Text}
-#    Wait for and click on Element  ${use_msg}
-#    Wait for and click on Element  ${sent_postBtn}
-
-Hint_Suggestion1
+Suggestion_BroilerPlate
    Wait for and click on Element  ${creat_a_Post}
    Wait for Element  ${agree_btn1}
    Click Test_data  ${agree_txt}
    Wait for and click on Element  ${hint_msg}
    Wait for Element  ${get_msg}
-   ${Text}  Get Text	 ${get_msg}
-   Log to console  ${Text}
+   # ${lines} =	Get Lines Containing String	${Text}  ---
+   # Log to console  ${lines}
+Hint_Suggestion
+   Wait for and click on Element  ${use_msg}
+   Wait for and click on Element  ${sent_postBtn}
+
+Hint_Suggestion1
    Wait for and click on Element  ${use_msg}
    Wait for and click on Element  ${sent_postBtn}
    Wait for and click on Element  ${ok1_btn}
    Press Keycode  22
    Press Keycode  8
    Wait for and click on Element  ${sent_postBtn}
+
+
+if_condition_flow
+   ${Text}  Get Text	 ${get_msg}
+   Log to console  ${Text}
+   Run Keyword If	'${Text}' == '---'	Run Keyword  Hint_Suggestion  ELSE  Hint_Suggestion1
    Sleep  30s

@@ -16,5 +16,9 @@ Create_Post
 # Repy_to_post
 #    Reply_post
 
+Hint_base
+   Suggestion_BroilerPlate
+
 Suggestion_message
-   Hint_Suggestion1
+   if_condition_flow
+
