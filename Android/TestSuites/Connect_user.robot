@@ -7,9 +7,9 @@ Suite Teardown   Close Apna Application
 *** Test Cases ***
 
 
-enterNumber
-   userConnect_Login
+Login_Connect_flows
+   userConnect_Login_FLOW
 
 
-OpenConnect
-    Open Connect Page
+UserConnect_Flow
+    Connect_page_open_FLOW

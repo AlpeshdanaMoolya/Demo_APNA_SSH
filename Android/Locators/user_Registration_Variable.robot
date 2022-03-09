@@ -58,12 +58,12 @@ ${savejobDetailBtn}  id=btn_save
 #image upload page
 ${choosefromgallerybtn}  id=tv_chose_from_gallery
 ${Allowbtn}  id=com.android.permissioncontroller:id/permission_allow_button
-${clickDownloadBtn}  id=com.android.gallery3d:id/gl_root_view
-
-${selectImage}  xpath=/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.view.View
+${folder_Btn}  id=com.google.android.apps.photos:id/title
 
 
-${crop accept button}  id=ucrop_btn_crop
+${selectImage}  xpath=//android.view.ViewGroup[@content-desc="Photo taken on Mar 8, 2022 4:49:18 PM"]
+
+${crop_btn}   id=ucrop_btn_crop
 
 ${btndone}  id=act_profile_info_btn_continue
 ${btnSeeJobs}  id=llcSeeJobs

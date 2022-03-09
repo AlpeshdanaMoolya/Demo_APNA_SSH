@@ -7,18 +7,18 @@ Suite Teardown   Close Apna Application
 *** Test Cases ***
 
 
-enterNumber
-   enter_numberLogin
+CreatePost_flow
+   noPost_flow
 
-Create_Post
-    Create_Post_inGroups
+Create_Post_Grp_flow
+    Create_Post_FLOW
 
-# Repy_to_post
-#    Reply_post
+Repy_to_post_flow
+   Reply_Post_FLOW
 
-Hint_base
-   Suggestion_BroilerPlate
+Suggestion_CreatePosts_flow
+   Create_post_Suggestion_FLOW
 
-Suggestion_message
-   if_condition_flow
+Suggestion_message_flow
+   Hint_Condition_FLOW
 

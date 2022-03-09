@@ -34,27 +34,27 @@ profileCreation
     Wait for and click on Element  ${nextBtn}
 
 experienceDetails
-    Wait for and click on Element  ${fresherBtn}
-    Wait for and click on Element  ${continueBtn}
+    # Wait for and click on Element  ${fresherBtn}
+    # Wait for and click on Element  ${continueBtn}
 
-    # Wait for and click on Element  ${yesbtnId}  
-    # Click Test_dataClick Test_data}
-    # Wait for and click on Element ${totalWorkExpirence}
-    # Wait for and click on Element  ${addexpFromDropdown}
-    # Wait for and click on Element  ${clickjobtitle}
-    # Input Test Data  ${enterJobTitleId}  ${enterJobTitle}
-    # Wait for and click on Element  ${selectJobTitle}    
-    # Wait for and click on Element  ${selectJobTitle}
-    # Input Test Data  ${enterCompanyName}  ${enterCompanyNameValue}
-    # Wait for and click on Element  ${nextbtnwork}
+    Wait for and click on Element  ${yesbtnId}
+    Wait for and click on Element  ${clickjobtitle}
+    Input Test Data  ${enterJobTitleId}  ${enterJobTitle}
+    Wait for and click on Element  ${enterCompanyName}    
+    Wait for and click on Element  ${enterCompanyName}
+    Input Test Data  ${enterCompanyName}  ${enterCompanyNameValue}
+    Wait for and click on Element  ${enterCompanyName}
+    Click Test_data  ${Total_Exp} 
+    Click Test_data  ${salary}
+    Wait for and click on Element  ${nextbtnwork}
 
 educationDetails
     Wait for and click on Element  ${educationDropDown}  
     Click A Specific Point  234  1218  
-    Wait for and click on Element  ${educationDropDown}
-    Wait for and click on Element  ${edudropdown}
-    # Input Test Data  ${clickDegree}  ${degreeValue}
-    # Input Test Data  ${ClickCollegeName}  ${Entercollegename}
+    # Wait for and click on Element  ${educationDropDown}
+    Wait for and click on Element  ${nextbtnwork}
+    Input Test Data  ${clickDegree}  ${degreeValue}
+    Input Test Data  ${ClickCollegeName}  ${Entercollegename}
     Wait for and click on Element  ${contBtn}
     
 
@@ -67,12 +67,11 @@ preferedjobSelection
 ProfilePicture_Uploading
     Wait for and click on Element  ${choosefromgallerybtn}
     Wait for and click on Element  ${Allowbtn}
-    Wait for and click on Element  ${clickDownloadBtn}  
-    
-    # Click Test_data  ${FolderName}
+    Wait for Element  ${folder_Btn}
+    Click Test_data  ${FolderName}
     Wait for and click on Element   ${selectImage}
-    Wait for and click on Element  ${crop accept button}
-    # Click Test_data  ${continue button text}
+    Wait for Element  ${crop_btn}
+    Click Test_data  ${crop_txt}
     Wait for Element  ${btndone}
     Click Test_data  ${done_btn}
     # Wait for and click on Element  ${skipPhoto}

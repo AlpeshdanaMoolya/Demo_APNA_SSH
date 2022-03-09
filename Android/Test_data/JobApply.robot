@@ -1,9 +1,9 @@
 *** Variables ***
 
 
-${search for job via search box}  account
+${search for job via search box}  sales
 ${Software_Developer}  Software Engineer
-${job_title}  Account Admin
+${job_title}  
 
 
 ${softwareDeveloporobCard1}  Software Engineer

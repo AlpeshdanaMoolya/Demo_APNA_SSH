@@ -6,11 +6,11 @@ Suite Setup  OpenApnaApp
 Suite Teardown   Close Apna Application
 *** Test Cases ***
 
-Login_Num_flow
-   editProfile_Login
+login_Profile_flow
+   Profile_No
 
-toViewProfile
-    ViewProfile
+Profile_View_flow
+    Page_ViewProfile
 
-toUploadResume
-    ResumeToBeUploaded
+UploadResume_flow
+    Upload_Resume

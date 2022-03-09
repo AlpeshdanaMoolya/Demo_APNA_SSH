@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220308 15:15:11.160" rpa="false" schemaversion="2">
-<suite id="s1" name="AlreadyUser Login" source="D:\apna\Demo_APNA_SSH\Android\TestSuites\AlreadyUser_Login.robot">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220309 12:21:19.263" rpa="false" schemaversion="2">
+<suite id="s1" name="User Registration" source="D:\apna\Demo_APNA_SSH\Android\TestSuites\User_Registration.robot">
 <kw name="OpenApnaApp" library="commons" type="SETUP">
 <kw name="Open Application" library="Zoomba.MobileLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
@@ -14,149 +14,78 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220308 15:15:11.542" endtime="20220308 15:15:32.153"/>
+<kw name="Save Appium Screenshot" library="Zoomba.MobileLibrary">
+<doc>Takes a screenshot with a unique filename to be stored in Robot Framework compiled
+reports.</doc>
+<status status="FAIL" starttime="20220309 12:22:07.628" endtime="20220309 12:22:07.629"/>
 </kw>
-<status status="PASS" starttime="20220308 15:15:11.542" endtime="20220308 15:15:32.153"/>
+<msg timestamp="20220309 12:22:07.633" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20220309 12:21:20.463" endtime="20220309 12:22:07.649"/>
 </kw>
-<test id="s1-t1" name="Login_Num_flow">
-<kw name="AlreadyReg_Number_flow" library="user_login">
-<kw name="Login__Mobile_no" library="loginPageSteps">
-<kw name="Enter_Mobile_no" library="commons">
-<kw name="Wait for and click on Element" library="commons">
-<arg>${editText}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220308 15:15:32.158" endtime="20220308 15:15:35.820"/>
+<status status="FAIL" starttime="20220309 12:21:20.462" endtime="20220309 12:22:07.650"/>
 </kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220308 15:15:35.822" level="INFO">Clicking element 'id=et_login_number'.</msg>
-<status status="PASS" starttime="20220308 15:15:35.821" endtime="20220308 15:15:36.434"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:32.157" endtime="20220308 15:15:36.434"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${editText}</arg>
-<arg>${Login_No}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220308 15:15:36.437" level="INFO">Typing text '8976233800' into text field 'id=et_login_number'</msg>
-<status status="PASS" starttime="20220308 15:15:36.435" endtime="20220308 15:15:37.811"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:36.434" endtime="20220308 15:15:37.811"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${submit_btn}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220308 15:15:37.813" endtime="20220308 15:15:38.438"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220308 15:15:38.440" level="INFO">Clicking element 'id=btn_send'.</msg>
-<status status="PASS" starttime="20220308 15:15:38.438" endtime="20220308 15:15:38.592"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:37.813" endtime="20220308 15:15:38.593"/>
-</kw>
-<kw name="Wait for and click on Element" library="commons">
-<arg>${otpBtn1}</arg>
-<kw name="Wait Until Page Contains Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>timeout=60s</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220308 15:15:38.596" endtime="20220308 15:15:41.182"/>
-</kw>
-<kw name="Click Element" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220308 15:15:41.184" level="INFO">Clicking element 'id=et_otp1'.</msg>
-<status status="PASS" starttime="20220308 15:15:41.182" endtime="20220308 15:15:42.274"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:38.594" endtime="20220308 15:15:42.275"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${otpBtn1}</arg>
-<arg>${otp_Value1}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220308 15:15:42.279" level="INFO">Typing text '6' into text field 'id=et_otp1'</msg>
-<status status="PASS" starttime="20220308 15:15:42.275" endtime="20220308 15:15:43.235"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:42.275" endtime="20220308 15:15:43.235"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${otpBtn2}</arg>
-<arg>${otp_Value2}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220308 15:15:43.238" level="INFO">Typing text '9' into text field 'id=et_otp2'</msg>
-<status status="PASS" starttime="20220308 15:15:43.236" endtime="20220308 15:15:44.204"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:43.235" endtime="20220308 15:15:44.204"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${otpBtn3}</arg>
-<arg>${otp_Value3}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220308 15:15:44.208" level="INFO">Typing text '0' into text field 'id=et_otp3'</msg>
-<status status="PASS" starttime="20220308 15:15:44.205" endtime="20220308 15:15:45.213"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:44.204" endtime="20220308 15:15:45.214"/>
-</kw>
-<kw name="Input Test Data" library="commons">
-<arg>${otpBtn4}</arg>
-<arg>${otp_Value4}</arg>
-<kw name="Input Text" library="Zoomba.MobileLibrary">
-<arg>${element}</arg>
-<arg>${value}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220308 15:15:45.217" level="INFO">Typing text '1' into text field 'id=et_otp4'</msg>
-<status status="PASS" starttime="20220308 15:15:45.214" endtime="20220308 15:15:46.223"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:45.214" endtime="20220308 15:15:46.223"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:32.157" endtime="20220308 15:15:46.223"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:32.156" endtime="20220308 15:15:46.224"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:32.156" endtime="20220308 15:15:46.224"/>
-</kw>
-<status status="PASS" starttime="20220308 15:15:32.154" endtime="20220308 15:15:46.225"/>
+<test id="s1-t1" name="New_User_Authorization">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220309 12:22:07.650" endtime="20220309 12:22:07.657">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t2" name="languageSelection">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220309 12:22:07.682" endtime="20220309 12:22:07.683">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t3" name="createProfile">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220309 12:22:07.684" endtime="20220309 12:22:07.685">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="detailsOfExperience">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220309 12:22:07.686" endtime="20220309 12:22:07.687">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="detailsOfEducation">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220309 12:22:07.689" endtime="20220309 12:22:07.690">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="selectionOfJob">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220309 12:22:07.692" endtime="20220309 12:22:07.693">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="Pic_Upload_Flow">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220309 12:22:07.697" endtime="20220309 12:22:07.697">Test execution stopped due to a fatal error.</status>
 </test>
 <kw name="Close Apna Application" library="commons" type="TEARDOWN">
 <kw name="Close Application" library="Zoomba.MobileLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220308 15:15:46.228" endtime="20220308 15:15:48.048"/>
+<kw name="Save Appium Screenshot" library="Zoomba.MobileLibrary">
+<doc>Takes a screenshot with a unique filename to be stored in Robot Framework compiled
+reports.</doc>
+<msg timestamp="20220309 12:22:07.709" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20220309 12:22:07.701" endtime="20220309 12:22:07.709"/>
 </kw>
-<status status="PASS" starttime="20220308 15:15:46.228" endtime="20220308 15:15:48.049"/>
+<msg timestamp="20220309 12:22:07.714" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20220309 12:22:07.720" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20220309 12:22:07.700" endtime="20220309 12:22:07.720"/>
 </kw>
-<status status="PASS" starttime="20220308 15:15:11.162" endtime="20220308 15:15:48.049"/>
+<status status="FAIL" starttime="20220309 12:22:07.700" endtime="20220309 12:22:07.720">No application is open</status>
+</kw>
+<status status="FAIL" starttime="20220309 12:21:19.266" endtime="20220309 12:22:07.721">Suite setup failed:
+Execution terminated by signal
+
+Also suite teardown failed:
+No application is open</status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="7" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="0" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="AlreadyUser Login">AlreadyUser Login</stat>
+<stat pass="0" fail="7" skip="0" id="s1" name="User Registration">User Registration</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20220309 12:22:07.633" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg timestamp="20220309 12:22:07.714" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>

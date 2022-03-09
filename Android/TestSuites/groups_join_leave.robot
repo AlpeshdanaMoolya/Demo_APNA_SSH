@@ -8,7 +8,7 @@ Suite Setup  OpenApnaApp
 
 
 enterNumber
-   enter no To Login
+    Join_Login_FLOW
 
 OpenGroups
-    open Groups Page
+    JoinGroup_FLOW
