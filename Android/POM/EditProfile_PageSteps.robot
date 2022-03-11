@@ -15,10 +15,10 @@ ResumeToBeUploaded
     Wait for and click on Element  ${uploadResume} 
     Wait for and click on Element  ${resumeButton}
     Wait for and click on Element  ${allowButton}
-    Wait for Element   ${docsPage}
-    # Click Test_data  ${resume_txt}
-    # Wait for and click on Element  ${submitButton}
-    # Wait for and click on Element  ${doneButton}
+    Wait for and click on Element  ${docsPage}
+    # Click A Specific Point  799  873
+    Wait for and click on Element  ${submitButton}
+    Wait for and click on Element  ${doneButton}
 
     Sleep  30s
     

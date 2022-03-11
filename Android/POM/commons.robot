@@ -10,6 +10,7 @@ Resource  ../Locators/User_login_Variable.robot
 # Library    Zoomba.SOAPLibrary
 Library    Zoomba.MobileLibrary
 Library    BuiltIn
+Library  String
 
 # Library    Zoomba.DesktopLibrary
 
@@ -39,17 +40,26 @@ Click A Specific Point
   [Arguments]  ${element1}  ${element2}    
   Click A Point   x=${element1}  y=${element2}  duration=100
 
-Enter_Mobile_no  
-   Wait for and click on Element  ${editText}     
-   Input Test Data  ${editText}  ${Login_No}  
+
+Enter_Mobile_no
+  # Fetch From Left  ${user_no}  marker
+   
+   Wait for and click on Element  ${editText}    
+   Input Test Data   ${editText}  ${Login_No}
+
    Wait for and click on Element  ${submit_btn}  
-   Wait for and click on Element  ${otpBtn1}
-   Input Test Data  ${otpBtn1}  ${otp_Value1}
-   Input Test Data  ${otpBtn2}  ${otp_Value2}
-   Input Test Data  ${otpBtn3}  ${otp_Value3}
-   Input Test Data  ${otpBtn4}  ${otp_Value4}
+   Wait for Element  ${otpBtn1}
+   Input Test Data  ${otpBtn1}  ${otp_1}
+   Input Test Data  ${otpBtn2}  ${otp_2}
+   Input Test Data  ${otpBtn3}  ${otp_3}
+   Input Test Data  ${otpBtn4}  ${otp_4}
+
+  
+
+
+
 
 
 Close Apna Application
     Close Application
-
+   

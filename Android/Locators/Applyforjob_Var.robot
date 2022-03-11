@@ -4,7 +4,7 @@ ${search by title,company,ex-clerk}  id=etSearchJobs
 ${searchinputboxclick}  id=etSearch
 ${tv_PopularJobs}  id=tvPopularJobs
 
-${selectAdminjobid}   id=tvJobTitle
+${select_job}   id=tvJobTitle
 ${back_btn}  id=ivBack
 ${apply for jobid}    id=frag_job_det_tvTalkWithHR
 ${job specific Question Aadhar 1}   id=tvOption1

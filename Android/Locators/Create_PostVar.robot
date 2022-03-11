@@ -16,7 +16,7 @@ ${camera_click}  xpath=//android.widget.ImageView[@content-desc="Shutter"]
 ${done_btn1}  xpath=//android.widget.ImageButton[@content-desc="Done"]
 ${btn_continue}  id=btn_continue
 ${sent_postBtn}  id=sent_post
-${reply_post}  id=et_create_post
+${reply_post}  id=tv_sent_msg
 ${agree_msg}  id=tv_guideline_agree
 ${hint_msg}  id=iv_post_hint
 ${get_msg}  id=tv_message_hint

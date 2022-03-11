@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220309 12:21:19.263" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220311 12:22:20.591" rpa="false" schemaversion="2">
 <suite id="s1" name="User Registration" source="D:\apna\Demo_APNA_SSH\Android\TestSuites\User_Registration.robot">
 <kw name="OpenApnaApp" library="commons" type="SETUP">
 <kw name="Open Application" library="Zoomba.MobileLibrary">
@@ -14,78 +14,69 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<kw name="Save Appium Screenshot" library="Zoomba.MobileLibrary">
-<doc>Takes a screenshot with a unique filename to be stored in Robot Framework compiled
-reports.</doc>
-<status status="FAIL" starttime="20220309 12:22:07.628" endtime="20220309 12:22:07.629"/>
+<status status="PASS" starttime="20220311 12:22:21.165" endtime="20220311 12:22:40.585"/>
 </kw>
-<msg timestamp="20220309 12:22:07.633" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: Execution terminated by signal</msg>
-<status status="FAIL" starttime="20220309 12:21:20.463" endtime="20220309 12:22:07.649"/>
-</kw>
-<status status="FAIL" starttime="20220309 12:21:20.462" endtime="20220309 12:22:07.650"/>
+<status status="PASS" starttime="20220311 12:22:21.165" endtime="20220311 12:22:40.585"/>
 </kw>
 <test id="s1-t1" name="New_User_Authorization">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20220309 12:22:07.650" endtime="20220309 12:22:07.657">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t2" name="languageSelection">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20220309 12:22:07.682" endtime="20220309 12:22:07.683">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t3" name="createProfile">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20220309 12:22:07.684" endtime="20220309 12:22:07.685">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t4" name="detailsOfExperience">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20220309 12:22:07.686" endtime="20220309 12:22:07.687">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t5" name="detailsOfEducation">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20220309 12:22:07.689" endtime="20220309 12:22:07.690">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t6" name="selectionOfJob">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20220309 12:22:07.692" endtime="20220309 12:22:07.693">Test execution stopped due to a fatal error.</status>
-</test>
-<test id="s1-t7" name="Pic_Upload_Flow">
-<tag>robot:exit</tag>
-<status status="FAIL" starttime="20220309 12:22:07.697" endtime="20220309 12:22:07.697">Test execution stopped due to a fatal error.</status>
+<kw name="mobile_Number_flow" library="User_Reg">
+<kw name="New__Mobile_no" library="userReg_pageSteps">
+<kw name="Random_no" library="commons">
+<kw name="Generate Random String" library="String">
+<var>${user_no}</var>
+<arg>10</arg>
+<arg>[NUMBERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20220311 12:22:40.590" level="INFO">${user_no} = 8828264931</msg>
+<status status="PASS" starttime="20220311 12:22:40.589" endtime="20220311 12:22:40.590"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Header}</var>
+<arg>${user_no}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220311 12:22:40.590" level="INFO">${Header} = 8828264931</msg>
+<status status="PASS" starttime="20220311 12:22:40.590" endtime="20220311 12:22:40.590"/>
+</kw>
+<kw name="Run Keyword And Return" library="BuiltIn">
+<arg>${Header}</arg>
+<doc>Runs the specified keyword and returns from the enclosing user keyword.</doc>
+<kw name="8828264931">
+<msg timestamp="20220311 12:22:40.601" level="FAIL">No keyword with name '8828264931' found.</msg>
+<status status="FAIL" starttime="20220311 12:22:40.601" endtime="20220311 12:22:40.601"/>
+</kw>
+<msg timestamp="20220311 12:22:40.601" level="INFO">Returning from the enclosing user keyword.</msg>
+<status status="FAIL" starttime="20220311 12:22:40.591" endtime="20220311 12:22:40.604"/>
+</kw>
+<status status="FAIL" starttime="20220311 12:22:40.589" endtime="20220311 12:22:40.605"/>
+</kw>
+<kw name="Enter_Mobile_no" library="commons">
+<status status="NOT RUN" starttime="20220311 12:22:40.606" endtime="20220311 12:22:40.606"/>
+</kw>
+<status status="FAIL" starttime="20220311 12:22:40.588" endtime="20220311 12:22:40.607"/>
+</kw>
+<status status="FAIL" starttime="20220311 12:22:40.587" endtime="20220311 12:22:40.607"/>
+</kw>
+<status status="FAIL" starttime="20220311 12:22:40.585" endtime="20220311 12:22:40.617">No keyword with name '8828264931' found.</status>
 </test>
 <kw name="Close Apna Application" library="commons" type="TEARDOWN">
 <kw name="Close Application" library="Zoomba.MobileLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<kw name="Save Appium Screenshot" library="Zoomba.MobileLibrary">
-<doc>Takes a screenshot with a unique filename to be stored in Robot Framework compiled
-reports.</doc>
-<msg timestamp="20220309 12:22:07.709" level="FAIL">No application is open</msg>
-<status status="FAIL" starttime="20220309 12:22:07.701" endtime="20220309 12:22:07.709"/>
+<status status="PASS" starttime="20220311 12:22:40.650" endtime="20220311 12:22:42.507"/>
 </kw>
-<msg timestamp="20220309 12:22:07.714" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: No application is open</msg>
-<msg timestamp="20220309 12:22:07.720" level="FAIL">No application is open</msg>
-<status status="FAIL" starttime="20220309 12:22:07.700" endtime="20220309 12:22:07.720"/>
+<status status="PASS" starttime="20220311 12:22:40.650" endtime="20220311 12:22:42.508"/>
 </kw>
-<status status="FAIL" starttime="20220309 12:22:07.700" endtime="20220309 12:22:07.720">No application is open</status>
-</kw>
-<status status="FAIL" starttime="20220309 12:21:19.266" endtime="20220309 12:22:07.721">Suite setup failed:
-Execution terminated by signal
-
-Also suite teardown failed:
-No application is open</status>
+<status status="FAIL" starttime="20220311 12:22:20.596" endtime="20220311 12:22:42.508"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="7" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="0" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
 </tag>
 <suite>
-<stat pass="0" fail="7" skip="0" id="s1" name="User Registration">User Registration</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="User Registration">User Registration</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20220309 12:22:07.633" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: Execution terminated by signal</msg>
-<msg timestamp="20220309 12:22:07.714" level="WARN">Keyword 'Save Appium Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>

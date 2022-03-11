@@ -39,22 +39,25 @@ Create_Post_inGroups
 
 Reply_post
    Wait for and click on Element  ${reply_post}
-   Wait for Element  ${add_Content}
+   Wait for Element  ${agree_msg}
+   Click Test_data  ${agree_txt}
    Input Test Data  ${add_Content}  ${data_val}
    Wait for and click on Element  ${sent_postBtn}
-   Click A Specific Point  ${x}  ${y}
+   
 
 Suggestion_BroilerPlate
    Wait for and click on Element  ${creat_a_Post}
-   Wait for Element  ${agree_btn1}
-   Click Test_data  ${agree_txt}
+   # Wait for Element  ${agree_btn1}
+   # Click Test_data  ${agree_txt}
    Wait for and click on Element  ${hint_msg}
    Wait for Element  ${get_msg}
    # ${lines} =	Get Lines Containing String	${Text}  ---
    # Log to console  ${lines}
+   
 Hint_Suggestion1
    Wait for and click on Element  ${use_msg}
    Wait for and click on Element  ${sent_postBtn}
+   
 
 Hint_Suggestion2
    Wait for and click on Element  ${use_msg}

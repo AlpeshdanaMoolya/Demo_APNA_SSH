@@ -3,17 +3,14 @@
 
 #Text Type
 
-${number1}  9870138800
-${otpValue1}  0
-${otpValue2}  1
-${otpValue3}  2
-${otpValue4}  4
+
+
 
 ${textLang}  English
 
 ${textGo}  Let’s go!
 ${NameValue}  Alpesh dana
-${CityValue}  Mumb
+${CityValue}  Mum
 ${CityNameBtn}  Mumbai
 ${search_Live_City}   agar
 ${cityselect}  Agar Bazar
@@ -29,7 +26,7 @@ ${salary}  ₹10,000 - ₹15,000
 ${degreeValue}  BTech
 ${Entercollegename}  Amity
 
-${select first job role}  Accounts / Finance
+${select first job role}  Marketing
 
 ${select Second Job Role}  Software / Web Developer
 

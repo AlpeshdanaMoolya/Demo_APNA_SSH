@@ -1,6 +1,6 @@
 *** Variables *** 
 
-
+${editText}  id=et_login_number
 #Select Language
 ${selectEngLang}  id=tv_lang_head
 
@@ -35,19 +35,19 @@ ${enterJobTitleId}  id=act_profile_info_et_job_title
 ${enterCompanyName}  id=act_profile_info_et_company_name
 
 ${salrybarid}  id=act_education_seekbar_salary
-${nextbtnwork}  id=act_education_btn_continue
+
 
 ${fresherBtn}  id=act_education_btn_fresher
-${continueBtn}  id=act_education_btn_continue
+
 
 #Education Details 
 ${educationDropDown}  id=et_education  
 ${edudropdown}  id=tv_education_detail_info
 ${clickDegree}  id=et_degree
-
+${nextbtnwork}  id=act_education_btn_continue
 ${ClickCollegeName}  id=et_college
 
-${contBtn}  id=com.apnatime.debug:id/act_education_btn_continue
+${contBtn}  id=act_education_btn_continue
 
 #Select Prefered Job
 ${waittilljoblistdiplayed}  id=tv_title
@@ -61,11 +61,21 @@ ${Allowbtn}  id=com.android.permissioncontroller:id/permission_allow_button
 ${folder_Btn}  id=com.google.android.apps.photos:id/title
 
 
-${selectImage}  xpath=//android.view.ViewGroup[@content-desc="Photo taken on Mar 8, 2022 4:49:18 PM"]
+${selectImage}  xpath=//android.view.ViewGroup[@content-desc="Photo taken on Mar 10, 2022 10:43:17 AM"]
+
+
+
 
 ${crop_btn}   id=ucrop_btn_crop
 
 ${btndone}  id=act_profile_info_btn_continue
 ${btnSeeJobs}  id=llcSeeJobs
 
+
+# ${EXAMPLE_VAR} =	Set Variable	${user_no}
+
+${otp_1}=   generate random string  1  [NUMBERS]
+${otp_2}=   generate random string  1  [NUMBERS]
+${otp_3}=   generate random string  1  [NUMBERS]
+${otp_4}=   generate random string  1  [NUMBERS]
 # ${skipPhoto}  id=tv_skip_photo

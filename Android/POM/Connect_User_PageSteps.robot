@@ -26,6 +26,7 @@ Open Connect Page
    
 #    Scroll Down  ${waitForIt}
    Wait for Element  ${waitForIt}
+   Sleep  10s
    Click Test_data  ${FriendConnect}
    Wait for and click on Element  ${clickToConnect}
    Wait for and click on Element  ${backBtn}
