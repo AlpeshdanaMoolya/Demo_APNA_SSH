@@ -8,7 +8,7 @@ Resource  ../POM/createPost_PageSteps.robot
 
 
 noPost_flow
-   enter_no_createPost
+   Login__Mobile_CreatePost
 
 Create_Post_FLOW
    Create_Post_inGroups

@@ -10,7 +10,7 @@ Resource  ../POM/applyForJob_PageSteps.robot
 #    OpenApnaApp
 
 enter_no_apply_flow
-   applyJob_Login
+   Login__Mobile_ApplyJob
 
 Search_job_Flow
    Search_job

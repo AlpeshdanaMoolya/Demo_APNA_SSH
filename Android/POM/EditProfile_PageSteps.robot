@@ -2,11 +2,23 @@
 Library    Zoomba.MobileLibrary
 Resource  ../Locators/User_EditProfile.robot
 Resource  ../POM/commons.robot
+Resource  ../POM/userReg_pageSteps.robot
+Resource  ../POM/loginPageSteps.robot
 
 *** Keywords ***
 
-Login__Profile 
-    Enter_Mobile_no
+Login__Mobile_Profile  
+   mobile_login  
+   Random_otp
+   Wait for and click on Element  ${editText}  
+   Input Test Data   ${editText}  ${Login_No}
+   Wait for and click on Element  ${Enter_btn}  
+   Wait for Element  ${otpBtn1}
+   Input Test Data  ${otpBtn1}  ${OTP_NO}
+   Input Test Data  ${otpBtn2}  ${OTP_NO}
+   Input Test Data  ${otpBtn3}  ${OTP_NO}
+   Input Test Data  ${otpBtn4}  ${OTP_NO}
+
 
 ViewProfile
     Wait for and click on Element  ${viewProfile}

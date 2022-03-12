@@ -4,6 +4,7 @@ Resource  ../Test_data/user_Reg_data.robot
 Resource  ../Locators/user_Registration_Variable.robot
 Resource  ../Capablities/Desred_cap.robot
 Resource  ../POM/commons.robot
+Library  OperatingSystem
 
 
 *** Keywords ***
@@ -12,7 +13,20 @@ Launch_Application
 
 
 New__Mobile_no
-   Enter_Mobile_no
+   Random_no
+   Random_otp
+   Log to console  ${Mobile_no}
+   run keyword if  '${Mobile_no}' == 'NUMBERS'   write_variable_in_file  ${Mobile_no}
+   write_variable_in_file  ${Mobile_no}
+#    Log to console  ${OTP_NO}
+    Wait for and click on Element  ${editText}  
+   Input Test Data   ${editText}  ${Mobile_no}
+   Wait for and click on Element  ${Enter_btn}  
+   Wait for Element  ${otpBtn1}
+   Input Test Data  ${otpBtn1}  ${OTP_NO}
+   Input Test Data  ${otpBtn2}  ${OTP_NO}
+   Input Test Data  ${otpBtn3}  ${OTP_NO}
+   Input Test Data  ${otpBtn4}  ${OTP_NO}
 
 
 selectLanguage
@@ -79,3 +93,6 @@ ProfilePicture_Uploading
     Click Test_data  ${done_btn}
     # Wait for and click on Element  ${skipPhoto}
     Wait for and click on Element  ${btnSeeJobs}
+
+Verification Status
+    Log to console  ${success_Message}

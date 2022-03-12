@@ -35,3 +35,6 @@ ${FolderName}  Pictures
 ${crop_txt}  Continue
 ${done_btn}  Done
 
+${success_Message}  This testsuite passed successfully
+
+

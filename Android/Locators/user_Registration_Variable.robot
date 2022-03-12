@@ -1,6 +1,15 @@
 *** Variables *** 
-
+${Enter_btn}  id=btn_send
 ${editText}  id=et_login_number
+
+${otpBtn1}  id=et_otp1
+
+${otpBtn2}  id=et_otp2
+
+${otpBtn3}  id=et_otp3
+
+${otpBtn4}  id=et_otp4
+
 #Select Language
 ${selectEngLang}  id=tv_lang_head
 
@@ -61,7 +70,7 @@ ${Allowbtn}  id=com.android.permissioncontroller:id/permission_allow_button
 ${folder_Btn}  id=com.google.android.apps.photos:id/title
 
 
-${selectImage}  xpath=//android.view.ViewGroup[@content-desc="Photo taken on Mar 10, 2022 10:43:17 AM"]
+${selectImage}  xpath=//android.view.ViewGroup[@content-desc="Photo taken on Mar 11, 2022 3:57:24 PM"]
 
 
 
@@ -74,8 +83,4 @@ ${btnSeeJobs}  id=llcSeeJobs
 
 # ${EXAMPLE_VAR} =	Set Variable	${user_no}
 
-${otp_1}=   generate random string  1  [NUMBERS]
-${otp_2}=   generate random string  1  [NUMBERS]
-${otp_3}=   generate random string  1  [NUMBERS]
-${otp_4}=   generate random string  1  [NUMBERS]
 # ${skipPhoto}  id=tv_skip_photo

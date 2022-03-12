@@ -7,7 +7,7 @@ Resource  ../POM/Connect_User_PageSteps.robot
 #    OpenApnaApp
 
 userConnect_Login_FLOW
-   userConnect_Login
+   Login__Mobile_ConnectUser
 
 Connect_page_open_FLOW
    Open Connect Page

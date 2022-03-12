@@ -3,6 +3,7 @@ Library    Zoomba.MobileLibrary
 Resource  ../Locators/Create_PostVar.robot
 Resource  ../Test_data/create_Post_replypost.robot
 Resource  ../POM/commons.robot
+Resource  ../POM/loginPageSteps.robot
 Library  String
 Library  BuiltIn
 
@@ -11,9 +12,17 @@ Library  BuiltIn
 # openapnapp
 #    OpenApnaApp
 
-enter_no_createPost
-   Enter_Mobile_no
-
+Login__Mobile_CreatePost
+   mobile_login  
+   Random_otp
+   Wait for and click on Element  ${editText}  
+   Input Test Data   ${editText}  ${Login_No}
+   Wait for and click on Element  ${Enter_btn}  
+   Wait for Element  ${otpBtn1}
+   Input Test Data  ${otpBtn1}  ${OTP_NO}
+   Input Test Data  ${otpBtn2}  ${OTP_NO}
+   Input Test Data  ${otpBtn3}  ${OTP_NO}
+   Input Test Data  ${otpBtn4}  ${OTP_NO}
 Create_Post_inGroups
     Wait for and click on Element  ${groups_Btn}
     Wait for and click on Element  ${click_AheadBtn}
@@ -64,7 +73,7 @@ Hint_Suggestion2
    Wait for and click on Element  ${sent_postBtn}
    Wait for and click on Element  ${ok1_btn}
    Press Keycode  22
-   Press Keycode  8
+   Press Keycode  4
    Wait for and click on Element  ${sent_postBtn}
 
 

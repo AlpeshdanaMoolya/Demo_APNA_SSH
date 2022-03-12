@@ -7,7 +7,7 @@ Resource  ../POM/join_leave_PageSteps.robot
 
 
 Join_Login_FLOW
-   join_no_Login
+   Login__Mobile_Join
 
 JoinGroup_FLOW
   Open_Grp_Page

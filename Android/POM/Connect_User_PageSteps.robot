@@ -4,13 +4,24 @@ Resource  ../Locators/user_connectVar.robot
 Resource  ../Test_data/ConnectToUser.robot
 Resource  ../POM/commons.robot
 
+Resource  ../POM/loginPageSteps.robot
+
 *** Keywords ***
 
 openapnapp
    OpenApnaApp
 
-userConnect_Login
-   Enter_Mobile_no
+Login__Mobile_ConnectUser  
+   mobile_login  
+   Random_otp
+   Wait for and click on Element  ${editText}  
+   Input Test Data   ${editText}  ${Login_No}
+   Wait for and click on Element  ${Enter_btn}  
+   Wait for Element  ${otpBtn1}
+   Input Test Data  ${otpBtn1}  ${OTP_NO}
+   Input Test Data  ${otpBtn2}  ${OTP_NO}
+   Input Test Data  ${otpBtn3}  ${OTP_NO}
+   Input Test Data  ${otpBtn4}  ${OTP_NO}
 
 Open Connect Page
 

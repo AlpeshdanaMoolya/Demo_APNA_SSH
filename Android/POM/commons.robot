@@ -3,8 +3,6 @@
 # Resource  ../Locators/Text.robot
 # Resource  ../Locators/Variables.robot
 Resource  ../Capablities/Desred_cap.robot
-Resource  ../Test_data/Loggedin_user.robot
-Resource  ../Locators/User_login_Variable.robot
 # Library    Zoomba.APILibrary
 # Library    Zoomba.GUILibrary
 # Library    Zoomba.SOAPLibrary
@@ -41,23 +39,26 @@ Click A Specific Point
   Click A Point   x=${element1}  y=${element2}  duration=100
 
 
-Enter_Mobile_no
-  # Fetch From Left  ${user_no}  marker
-   
-   Wait for and click on Element  ${editText}    
-   Input Test Data   ${editText}  ${Login_No}
+Random_no
+   ${user_no}=   generate random string  10  [NUMBERS]
+   Set Global Variable  ${Mobile_no}  ${user_no}
 
-   Wait for and click on Element  ${submit_btn}  
-   Wait for Element  ${otpBtn1}
-   Input Test Data  ${otpBtn1}  ${otp_1}
-   Input Test Data  ${otpBtn2}  ${otp_2}
-   Input Test Data  ${otpBtn3}  ${otp_3}
-   Input Test Data  ${otpBtn4}  ${otp_4}
-
+write_variable_in_file
+  [Arguments]  ${variable}
+  Create File  ${EXECDIR}/file_with_variable.robot  ${variable}
   
 
 
+mobile_login
+  ${variable}=    Get File  file_with_variable.robot
+  Log to console  ${variable}
+  ${Value}=   Get Variable Value  ${variable}
+  log to console  ${Value}
+  Set Global Variable  ${Login_no}  ${Value}
 
+Random_otp
+   ${otp_1}  generate random string  1  [NUMBERS]
+   Set Global Variable  ${OTP_NO}  ${otp_1}
 
 
 Close Apna Application
