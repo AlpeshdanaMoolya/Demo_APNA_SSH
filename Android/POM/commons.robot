@@ -1,6 +1,7 @@
 *** Settings ***
 # Library  AppiumLibrary
 # Resource  ../Locators/Text.robot
+Resource  ../Test_data/Suite_message.robot
 # Resource  ../Locators/Variables.robot
 Resource  ../Capablities/Desred_cap.robot
 # Library    Zoomba.APILibrary
@@ -8,6 +9,7 @@ Resource  ../Capablities/Desred_cap.robot
 # Library    Zoomba.SOAPLibrary
 Library    Zoomba.MobileLibrary
 Library    BuiltIn
+Library  OperatingSystem
 Library  String
 
 # Library    Zoomba.DesktopLibrary
@@ -59,8 +61,28 @@ mobile_login
 Random_otp
    ${otp_1}  generate random string  1  [NUMBERS]
    Set Global Variable  ${OTP_NO}  ${otp_1}
+Test_failed
+   Log to console  ${error_message}
+   Set Global Variable  ${error_msg}  ${error_message}
+# Test_passed
+  #  Run Keyword If All Tests Passed  Log to console  ${Sucess_message} ELSE  Log to console  Test_failed
 
-
-Close Apna Application
-    Close Application
    
+Verfication_message
+    Log to console  ${Sucess_message}
+    Set Global Variable  ${Sucess_1}  ${Sucess_message}
+
+
+
+
+
+
+Element_visiblity
+    [Arguments]  ${element}
+    Page Should Contain Element  ${element}
+
+    Log to console   ${testcase_msg1}
+
+Close Apna Application 
+    Verfication_message
+    ${Sucess_1}  Close Application

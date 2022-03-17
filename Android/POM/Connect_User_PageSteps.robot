@@ -22,7 +22,7 @@ Login__Mobile_ConnectUser
    Input Test Data  ${otpBtn2}  ${OTP_NO}
    Input Test Data  ${otpBtn3}  ${OTP_NO}
    Input Test Data  ${otpBtn4}  ${OTP_NO}
-
+   Element_visiblity  ${connectBtn}
 Open Connect Page
 
    Wait for and click on Element  ${connectBtn}
@@ -40,4 +40,5 @@ Open Connect Page
    Sleep  10s
    Click Test_data  ${FriendConnect}
    Wait for and click on Element  ${clickToConnect}
+   Element_visiblity  ${backBtn}
    Wait for and click on Element  ${backBtn}

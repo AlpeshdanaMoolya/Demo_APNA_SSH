@@ -25,7 +25,7 @@ ${salary}  ₹10,000 - ₹15,000
 
 ${degreeValue}  BTech
 ${Entercollegename}  Amity
-
+${edu_next}  Next
 ${select first job role}  Marketing
 
 ${select Second Job Role}  Software / Web Developer

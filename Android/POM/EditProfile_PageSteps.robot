@@ -18,10 +18,11 @@ Login__Mobile_Profile
    Input Test Data  ${otpBtn2}  ${OTP_NO}
    Input Test Data  ${otpBtn3}  ${OTP_NO}
    Input Test Data  ${otpBtn4}  ${OTP_NO}
-
+   Element_visiblity  ${viewProfile}  
 
 ViewProfile
     Wait for and click on Element  ${viewProfile}
+    Element_visiblity  ${uploadResume} 
 
 ResumeToBeUploaded
     Wait for and click on Element  ${uploadResume} 
@@ -30,7 +31,8 @@ ResumeToBeUploaded
     Wait for and click on Element  ${docsPage}
     # Click A Specific Point  799  873
     Wait for and click on Element  ${submitButton}
+    Element_visiblity  ${doneButton} 
     Wait for and click on Element  ${doneButton}
-
+    
     Sleep  30s
     

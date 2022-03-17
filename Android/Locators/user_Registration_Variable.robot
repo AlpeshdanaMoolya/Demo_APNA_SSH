@@ -1,4 +1,6 @@
 *** Variables *** 
+
+
 ${Enter_btn}  id=btn_send
 ${editText}  id=et_login_number
 
@@ -55,6 +57,7 @@ ${edudropdown}  id=tv_education_detail_info
 ${clickDegree}  id=et_degree
 ${nextbtnwork}  id=act_education_btn_continue
 ${ClickCollegeName}  id=et_college
+${select_University}  id=tv_company_name
 
 ${contBtn}  id=act_education_btn_continue
 
@@ -70,7 +73,8 @@ ${Allowbtn}  id=com.android.permissioncontroller:id/permission_allow_button
 ${folder_Btn}  id=com.google.android.apps.photos:id/title
 
 
-${selectImage}  xpath=//android.view.ViewGroup[@content-desc="Photo taken on Mar 11, 2022 3:57:24 PM"]
+${selectImage}  xpath=//android.view.ViewGroup[@content-desc="Photo taken on Mar 15, 2022 2:58:45 PM"]
+
 
 
 

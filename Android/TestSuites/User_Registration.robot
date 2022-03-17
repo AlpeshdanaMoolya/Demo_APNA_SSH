@@ -4,9 +4,7 @@ Resource  ../Resources/User_Reg.robot
 
 Resource  ../POM/commons.robot
 Suite Setup  OpenApnaApp
-Suite Teardown  Close Apna Application
-
-
+Suite Teardown  Run Keyword If All Tests Passed   Close Apna Application
 *** Test Cases ***
 
 
@@ -31,3 +29,4 @@ selectionOfJob
 
 Pic_Upload_Flow
     Profile_Pic_Flow
+

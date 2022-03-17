@@ -20,5 +20,6 @@ Login__Mobile_no
    Input Test Data  ${otpBtn1}  ${OTP_NO}
    Input Test Data  ${otpBtn2}  ${OTP_NO}
    Input Test Data  ${otpBtn3}  ${OTP_NO}
+   Element_visiblity  ${otpBtn4} 
    Input Test Data  ${otpBtn4}  ${OTP_NO}
-
+   

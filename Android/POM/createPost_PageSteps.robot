@@ -31,6 +31,7 @@ Create_Post_inGroups
     
     Wait for Element  ${wait_Btn}
     Click Test_data   ${group_name}
+    Element_visiblity  ${reply_post} 
 #     Wait for and click on Element  ${creat_a_Post}
 #     Wait for Element  ${agree_btn1}
 #     Click Test_data  ${agree_txt}
@@ -52,6 +53,7 @@ Reply_post
    Click Test_data  ${agree_txt}
    Input Test Data  ${add_Content}  ${data_val}
    Wait for and click on Element  ${sent_postBtn}
+   Element_visiblity  ${creat_a_Post} 
    
 
 Suggestion_BroilerPlate
@@ -62,6 +64,7 @@ Suggestion_BroilerPlate
    Wait for Element  ${get_msg}
    # ${lines} =	Get Lines Containing String	${Text}  ---
    # Log to console  ${lines}
+   Element_visiblity  ${get_msg}
    
 Hint_Suggestion1
    Wait for and click on Element  ${use_msg}
@@ -76,8 +79,8 @@ Hint_Suggestion2
    Press Keycode  4
    Wait for and click on Element  ${sent_postBtn}
 
-
 Select_Hint
+   
    ${Text}  Get Text	 ${get_msg}
    Log to console  ${Text}
    Run Keyword If	'${Text}' == '---'	Run Keyword  Hint_Suggestion1  ELSE  Hint_Suggestion2

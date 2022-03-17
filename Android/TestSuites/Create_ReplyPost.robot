@@ -3,7 +3,7 @@ Library     OperatingSystem
 Resource  ../Resources/Createpost.robot
 Resource  ../POM/commons.robot
 Suite Setup  OpenApnaApp
-Suite Teardown   Close Apna Application
+Suite Teardown   Run Keyword If All Tests Passed   Close Apna Application
 *** Test Cases ***
 
 

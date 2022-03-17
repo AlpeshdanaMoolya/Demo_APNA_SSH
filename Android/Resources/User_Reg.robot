@@ -1,9 +1,9 @@
 *** Settings ***
 Library    Zoomba.MobileLibrary
 Resource  ../POM/userReg_pageSteps.robot
-
-
+Resource  ../POM/commons.robot
 *** Keywords ***
+
 openapnapp
    Launch_Application
 

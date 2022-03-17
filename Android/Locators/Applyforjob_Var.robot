@@ -1,7 +1,7 @@
 *** Variables ***
 #Searchoxjobsectionpage
-${search by title,company,ex-clerk}  id=etSearchJobs
-${searchinputboxclick}  id=etSearch
+${Search_Input1}  id=etSearchJobs
+${searchinputbox}  id=etSearch
 ${tv_PopularJobs}  id=tvPopularJobs
 
 ${select_job}   id=tvJobTitle
