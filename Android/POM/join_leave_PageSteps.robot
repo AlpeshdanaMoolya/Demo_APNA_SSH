@@ -19,9 +19,10 @@ Login__Mobile_Join
    Input Test Data  ${otpBtn2}  ${OTP_NO}
    Input Test Data  ${otpBtn3}  ${OTP_NO}
    Input Test Data  ${otpBtn4}  ${OTP_NO}
-   Element_visiblity  ${groupsBtn} 
+   
 
 Open_Grp_Page
+   # Element_visiblity  ${groupsBtn} 
    Wait for and click on Element  ${groupsBtn}
    Wait for and click on Element  ${clickAheadBtn}
    Wait for and click on Element  ${clickAheadBtn}
@@ -36,6 +37,7 @@ Open_Grp_Page
 
    Wait for and click on Element  ${Search_btn2}
    Input Test Data  ${Search_btn2}  ${soft}
+   Element_visiblity  ${waitBtn} 
    Wait for and click on Element  ${waitBtn}
-   Element_visiblity  ${groupPageBtn} 
+   
    Wait for and click on Element  ${groupPageBtn}
