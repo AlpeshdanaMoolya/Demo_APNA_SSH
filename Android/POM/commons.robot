@@ -73,15 +73,11 @@ Verfication_message
     Set Global Variable  ${Sucess_1}  ${Sucess_message}
 
 
-
-
-
-
 Element_visiblity
     [Arguments]  ${element}
-    Page Should Contain Element  ${element}
+    Page Should Contain Element  ${element}  loglevel= page doesn't contain element ${element}
+    # Log to console   ${testcase_msg1}
 
-    Log to console   ${testcase_msg1}
 
 Close Apna Application 
     Verfication_message
