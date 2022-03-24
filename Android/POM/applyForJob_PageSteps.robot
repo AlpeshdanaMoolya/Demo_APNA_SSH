@@ -21,7 +21,7 @@ Login__Mobile_ApplyJob
    Input Test Data  ${otpBtn2}  ${OTP_NO}
    Input Test Data  ${otpBtn3}  ${OTP_NO}
    Input Test Data  ${otpBtn4}  ${OTP_NO}
-   Element_visiblity  ${Search_Input1}
+   Element_visiblity  ${otpBtn4}
 
 Search_job
    Wait for and click on Element  ${Search_Input1}
